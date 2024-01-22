@@ -1,6 +1,6 @@
 import React from "react"
 
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 
 // import { AuthProvider } from "../contexts/AuthContext"
 
@@ -12,10 +12,10 @@ function App() {
     <div style={{ fontFamily: 'Avenir' }}>
       <Router>
         {/* <AuthProvider> */}
-          <Switch>
+          <Routes>
             {/* <Route path="/chats" component={Chats} /> */}
             <Route path="/" component={Login} />
-          </Switch>
+          </Routes>
         {/* </AuthProvider> */}
       </Router>
     </div>
