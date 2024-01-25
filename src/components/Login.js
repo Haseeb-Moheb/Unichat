@@ -1,9 +1,10 @@
 import React from "react";
 import { GoogleOutlined, FacebookOutlined } from "@ant-design/icons";
-import { firebase } from "firebase/app";
-import { auth } from "./firebase";
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/auth';
 
-const Login = () => {
+const Login = () => { 
+    const auth = firebase.auth();
     return (
         <div id="login-page">
             <div id="login-card">

@@ -1,9 +1,9 @@
 import React from "react";
 
-const chats = () => {
+const Chats = () => { 
     return(
         <h1>Chats</h1>
     );
 }
 
-export default chats;
+export default Chats;
