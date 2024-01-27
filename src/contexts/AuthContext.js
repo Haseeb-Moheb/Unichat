@@ -11,7 +11,7 @@ export const useAuth = () => useContext(AuthContext);
 
 export const AuthProvider = ({ children }) => {
     const [loading, setLoading] = useState(true);
-    const [user, setUser] = useState({});
+    const [user, setUser] = useState(null);
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -19,7 +19,7 @@ export const AuthProvider = ({ children }) => {
         auth.onAuthStateChanged((user) =>  {
             setUser(user);
             setLoading(false);
-            navigate('/chats');
+            if (user) navigate('/chats');
         })
 
     }, [user,navigate]);

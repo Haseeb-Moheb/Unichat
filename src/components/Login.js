@@ -1,10 +1,15 @@
 import React from "react";
 import { GoogleOutlined, FacebookOutlined } from "@ant-design/icons";
 import firebase from 'firebase/compat/app';
+import { getAuth, GoogleAuthProvider, FacebookAuthProvider, signInWithCredential } from "firebase/auth";
 import 'firebase/compat/auth';
 
+    const auth = getAuth();
+    firebase.auth.GoogleAuthProvider();
+    // signInWithRedirect(auth, provider);
+
 const Login = () => { 
-    const auth = firebase.auth();
+    
     return (
         <div id="login-page">
             <div id="login-card">
@@ -26,5 +31,5 @@ const Login = () => {
         </div>
     );
 }
-//  export { firebase }
+
 export default Login;
