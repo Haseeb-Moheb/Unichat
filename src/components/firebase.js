@@ -1,23 +1,12 @@
-import { initializeApp } from "firebase/app";
-import { getAuth } from "firebase/auth";
-import { getDatabase } from "firebase/database";
-// import { firebase } from "firebase/app";
-import firebase from 'firebase/compat/app';
+import firebase from "firebase/compat/app";
 import "firebase/auth";
 
-// export const auth = firebase.initializeApp({
-    const app = initializeApp({
-        apiKey: "AIzaSyBr64lJg3glicfKOdamHNPHPCUgGW0Ys5c",
-        authDomain: "unichat-d0d1e.firebaseapp.com",
-        projectId: "unichat-d0d1e",
-        storageBucket: "unichat-d0d1e.appspot.com",
-        messagingSenderId: "317257263688",
-        appId: "1:317257263688:web:3b5f6fd56bf71573c5467d"
-  });
-//   .auth();
-    export const auth = getAuth()
-    const database = getDatabase();
-
-    export { database }
-
+export const auth = firebase.initializeApp({
+  apiKey: "AIzaSyBW1PUWQtZhZmEx8DWGVJjAgwQhi3K1_Tw",
+  authDomain: "auth-demo-c1925.firebaseapp.com",
+  projectId: "auth-demo-c1925",
+  storageBucket: "auth-demo-c1925.appspot.com",
+  messagingSenderId: "746557330045",
+  appId: "1:746557330045:web:059113e6cc70c0bb8d1714"
+}).auth()
 

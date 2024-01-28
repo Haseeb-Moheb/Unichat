@@ -2,7 +2,7 @@ import React, { useContext, useState, useEffect } from "react";
 import { useNavigate } from 'react-router-dom'
 // import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
-import { auth } from "../components/firebase";
+import { auth } from "../components/firebase"; 
 
 const AuthContext = React.createContext();
 // const auth = firebase.auth();
