@@ -1,12 +1,13 @@
 import React from "react";
 import { GoogleOutlined, FacebookOutlined } from "@ant-design/icons";
 import firebase from 'firebase/compat/app';
-import { getAuth } from "firebase/auth";
+import { getAuth, signInWithRedirect, GoogleAuthProvider, FacebookAuthProvider } from "firebase/auth";
 import 'firebase/compat/auth';
 
     // const provider = new 
     // firebase.auth.GoogleAuthProvider();
-    // signInWithRedirect(auth, provider);
+    signInWithRedirect();
+
 
 const Login = () => {
 
