@@ -2,6 +2,7 @@
   "name": "unichat-template",
   "version": "0.1.0",
   "private": true,
+  "strictNullChecks": true,
   "types": "./lib/main.d.ts",
   "dependencies": {
     "@ant-design/icons": "^5.2.6",

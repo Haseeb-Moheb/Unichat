@@ -1,17 +1,16 @@
 import React from "react";
 import { GoogleOutlined, FacebookOutlined } from "@ant-design/icons";
 import firebase from 'firebase/compat/app';
-import { getAuth, signInWithRedirect, GoogleAuthProvider, FacebookAuthProvider } from "firebase/auth";
+import { signInWithRedirect } from "firebase/auth";
 import 'firebase/compat/auth';
 
     // const provider = new 
     // firebase.auth.GoogleAuthProvider();
     signInWithRedirect();
 
-
 const Login = () => {
 
-    const auth = getAuth(); 
+    // const auth = getAuth(); 
     
     return (
         <div id="login-page">
@@ -19,14 +18,14 @@ const Login = () => {
                 <h2>Welcome to Unichate!</h2>
                 <div
                     className="login-button google"
-                    onClick={() => auth.signInWithRedirect(new firebase.auth.GoogleAuthProvider())}
+                    onClick={() => signInWithRedirect(new firebase.auth.GoogleAuthProvider())}
                 >
                     <GoogleOutlined /> Sign In with Google
                 </div>
                 <br /> <br />
                 <div
                     className="login-button facebook"
-                    onClick={() => auth.signInWithRedirect(new firebase.auth.FacebookAuthProvider())}
+                    onClick={() => signInWithRedirect(new firebase.auth.FacebookAuthProvider())}
                 >
                     <FacebookOutlined /> Sign In with Facebook
                 </div>
