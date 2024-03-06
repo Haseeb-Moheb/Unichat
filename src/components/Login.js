@@ -4,14 +4,7 @@ import firebase from 'firebase/compat/app';
 import { signInWithRedirect } from "firebase/auth";
 import 'firebase/compat/auth';
 
-    // const provider = new 
-    // firebase.auth.GoogleAuthProvider();
-    signInWithRedirect();
-
 const Login = () => {
-
-    // const auth = getAuth(); 
-    
     return (
         <div id="login-page">
             <div id="login-card">
